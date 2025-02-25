@@ -1,0 +1,125 @@
+@import '../sass/variable.scss';
+
+main {
+  display: flex;
+  margin: 80px auto;
+  width: 1300px;
+  height: 700px;
+  border-radius: 24px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+  #main-left {
+    border-radius: 24px 0px 0px 24px;
+    width: 66.66%;
+  }
+
+  .right {
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 0px 50px;
+
+    #logo {
+      margin-bottom: 25px;
+    }
+
+    h1 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+
+    .form_item {
+      margin-bottom: 10px;
+      width: 100%;
+
+      label {
+        display: block;
+        margin-bottom: 8px;
+        margin-left: 10px;
+        font-size: 11px;
+      }
+
+      input {
+        border: none;
+        background-color: #e6e6e6;
+        padding: 17px 16px;
+        border-radius: 10px;
+        width: 100%;
+      }
+    }
+
+    a {
+      color: $light-color;
+      margin-left: auto;
+      margin-top: 10px;
+      margin-bottom: 26px;
+    }
+
+    #signIn {
+      background-color: $light-color;
+      color: white;
+      border: none;
+      width: 100%;
+      border-radius: 6px;
+      padding: 10px 0px;
+      font-size: 15px;
+      font-weight: 700;
+
+      // hover
+      &:hover {
+        opacity: 0.7;
+        cursor: pointer;
+      }
+    }
+
+    #line {
+      margin: 32px auto;
+      background-color: #e5e5e5;
+      width: 100%;
+      height: 2px;
+    }
+
+    #google {
+      background-color: $dark-color;
+      border: none;
+      width: 100%;
+      border-radius: 6px;
+      padding: 10px 0px;
+      margin-bottom: 32px;
+
+      // flexbox
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+
+      // hover
+      &:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+
+      span {
+        color: white;
+        font-size: 15px;
+        font-weight: 700;
+      }
+    }
+
+    .account {
+      margin: 0px auto;
+      margin-bottom: 60px;
+
+      a {
+        color: $light-color;
+
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+}
